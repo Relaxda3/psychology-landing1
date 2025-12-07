@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Авторская практика от психолога</title>
+  <style>
+    /* Основной фон с картинкой */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #333;
+    }
+
+    /* Полупрозрачная панель */
+    .container {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+      max-width: 450px;
+      text-align: center;
+      animation: fadeIn 1s ease-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #2c3e50;
+      animation: slideUp 1s ease-out forwards;
+      transform: translateY(20px);
+      opacity: 0;
+    }
+
+    @keyframes slideUp {
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    h2 {
+      font-size: 22px;
+      color: #e74c3c;
+      margin: 15px 0;
+      animation: fadeIn 1.2s ease-out forwards;
+    }
+
+    p {
+      font-size: 16px;
+      margin: 10px 0;
+      animation: fadeIn 1.4s ease-out forwards;
+    }
+
+    .price {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 15px 0;
+      color: #27ae60;
+    }
+
+    .old-price {
+      font-size: 16px;
+      text-decoration: line-through;
+      color: #888;
+      margin-left: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 25px;
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      background-color: #0070ba; /* PayPal синий */
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      text-decoration: none;
+      animation: fadeIn 1.6s ease-out forwards;
+    }
+
+    .btn:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      background-color: #004c8c;
+    }
+
+    .highlight {
+      color: #e67e22;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Авторская практика от психолога-гипнотерапевта</h1>
+    <p class="highlight">ТЕХНИКА БЫСТРОГО ВОССТАНОВЛЕНИЯ</p>
+    <p>15 минут, чтобы сбросить стресс</p>
+    <p class="price">98 грн <span class="old-price">2198</span></p>
+    <p class="highlight">Цена одного кофе вместо сессии психолога</p>
+    <a href="https://www.paypal.com/paypalme/вашаккаунт" class="btn" id="buyButton" target="_blank">Получить прямо сейчас</a>
+  </div>
+
+</body>
+</html>
